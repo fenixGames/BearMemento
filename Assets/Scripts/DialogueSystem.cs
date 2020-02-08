@@ -12,6 +12,8 @@ public class DialogueSystem : MonoBehaviour
     public List<Dialogue> AllDialogues;
     public TextMeshProUGUI DialogueText;
 
+    public PlayMakerFSM MainFSM;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -33,6 +35,11 @@ public class DialogueSystem : MonoBehaviour
     {
         Dialogue selected = AllDialogues.FirstOrDefault(content => content.DialogueName == dialogueName);
         DialogueText.text = selected.Text;
+    }
+
+    public void NextDialogue()
+    {
+        MainFSM.Fsm.Event("NextDialogue");
     }
 
 }
