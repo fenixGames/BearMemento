@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour{    // List of the objects in the inven
     {
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("Button pushed");
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
