@@ -801,6 +801,11 @@ PrefabInstance:
       propertyPath: dialogUI
       value: 
       objectReference: {fileID: 6882288659587223859}
+    - target: {fileID: 3706060641773551816, guid: 0f217b38ba1f49f4bb89397aa43e3a75,
+        type: 3}
+      propertyPath: dialogText
+      value: This is comming handy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f217b38ba1f49f4bb89397aa43e3a75, type: 3}
 --- !u!1001 &6882288659587223858

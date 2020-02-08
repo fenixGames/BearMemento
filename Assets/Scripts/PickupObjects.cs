@@ -15,7 +15,7 @@ public class PickupObjects : MonoBehaviour
             inventory.AddObject(gameObject);
             gameObject.SetActive(false);
 
-            DialogueSystem.Instance.AssignDialogue(dialogText);
+            DialogueSystem.Instance.SetDialogue(dialogText);
         }
     }
 }
