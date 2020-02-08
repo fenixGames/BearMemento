@@ -13,9 +13,11 @@ public class InventoryInteractor : MonoBehaviour, IDragHandler, IEndDragHandler
 
     private static List<RectTransform> AllInventoeyItems = new List<RectTransform>();
 
-    // Start is called before the first frame update
+    public PlayMakerFSM MainFSM;
+
     void Start()
     {
+        MainFSM = FindObjectOfType<PlayMakerFSM>();
         if (AllInventoeyItems.Count != 0) return;
         AllInventoeyItems = FindObjectsOfType<RectTransform>().ToList();
         AllInventoeyItems = (from content in AllInventoeyItems
@@ -56,7 +58,7 @@ public class InventoryInteractor : MonoBehaviour, IDragHandler, IEndDragHandler
                 if (name == "SultanHat" && item.name == "Lamp") combination = 1;
                 if (name == "Hammer" && item.name == "Instructions") combination = 2;
                 if (name == "AstronautHelmet" && item.name == "IdCard") combination = 3;
-
+                MainFSM.Fsm.Event(combination.ToString());
 
             }
         }
