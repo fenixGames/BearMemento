@@ -37,6 +37,11 @@ public class DialogueSystem : MonoBehaviour
         DialogueText.text = selected.Text;
     }
 
+    public void SetDialogue(string dialogue)
+    {
+        DialogueText.text = dialogue;
+    }
+
     public void NextDialogue()
     {
         MainFSM.Fsm.Event("NextDialogue");
