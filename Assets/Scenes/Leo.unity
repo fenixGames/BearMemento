@@ -1169,7 +1169,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 66
+        x: 82
         y: 100
         width: 100
         height: 16
@@ -1221,7 +1221,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 148
+        x: 164
         y: 235
         width: 100
         height: 32
@@ -1281,8 +1281,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 371
-        y: 236
+        x: 63
+        y: 428
         width: 108.28571
         height: 32
       isBreakpoint: 0
@@ -1341,7 +1341,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 51
+        x: 67
         y: 322
         width: 108.28571
         height: 32
@@ -1533,64 +1533,12 @@ MonoBehaviour:
         - functionCall
         paramDataPos: 00000000000000000400000000000000
         paramByteDataSize: 00000000040000000400000000000000
-    - name: Zustand 1
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 279
-        y: 369
-        width: 100
-        height: 16
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions: []
-      actionData:
-        actionNames: []
-        customNames: []
-        actionEnabled: 
-        actionIsOpen: 
-        actionStartIndex: 
-        actionHashCodes: 
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams: []
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams: []
-        byteData: 
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 
-        paramName: []
-        paramDataPos: 
-        paramByteDataSize: 
     - name: Zustand 2
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 562
+        x: 578
         y: 312
         width: 100
         height: 16

@@ -7,4 +7,19 @@ public class Inventory : MonoBehaviour{    // List of the objects in the inven
 
     /*** Adds an object to the objects in the inventory.* * @param pickedUpObject    Object picked to be added to the inventory.* @return true if the object can be added, false otherwise*/
     public bool AddObject(GameObject pickedUpObject)    {        if (listOfObjects.Count < inventorySize)        {            GameObject slot = transform.Find("Slot" + listOfObjects.Count).Find("Object").gameObject;            Image objectImage = slot.GetComponent<Image>();            SpriteRenderer spritePickedUpObject = pickedUpObject.GetComponent<SpriteRenderer>();
-            objectImage.color = spritePickedUpObject.color;            objectImage.sprite = spritePickedUpObject.sprite;            listOfObjects.Add(pickedUpObject);            return true;        }        return false;    }}
+            objectImage.color = spritePickedUpObject.color;            objectImage.sprite = spritePickedUpObject.sprite;            listOfObjects.Add(pickedUpObject);            return true;        }        return false;    }    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+            {
+                GameObject hitObject = hit.transform.gameObject;
+                AddObject(hitObject);
+                hitObject.SetActive(false);
+
+                DialogueSystem.Instance.SetDialogue(hitObject.GetComponent<PickupObjects>().dialogText);
+            }
+        }
+    }}

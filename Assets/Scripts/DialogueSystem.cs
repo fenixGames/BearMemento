@@ -27,7 +27,7 @@ public class DialogueSystem : MonoBehaviour
             Instance = this;
         }
 
-        AssignDialogue("Initial");
+   
 
     }
 
