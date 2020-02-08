@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Collections;using System.Collections.Generic;using UnityEngine;using UnityEngine.UI;
+using System.Collections;using System.Collections.Generic;using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour{    // List of the objects in the inventory    private List<GameObject> listOfObjects;    // Size of the inventory    public int inventorySize = 5;
 
@@ -22,4 +23,7 @@ public class Inventory : MonoBehaviour{    // List of the objects in the inven
                 DialogueSystem.Instance.SetDialogue(hitObject.GetComponent<PickupObjects>().dialogText);
             }
         }
-    }}
+    }
+
+
+}
