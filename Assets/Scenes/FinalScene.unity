@@ -1757,7 +1757,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8431331381884490372, guid: 13e09418fb2ed364394b58cb4e3c328d,
+    - target: {fileID: 800649041601569905, guid: 13e09418fb2ed364394b58cb4e3c328d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280499408447160023, guid: 13e09418fb2ed364394b58cb4e3c328d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: acc194adcff05b645a2c3674728fd807,
+        type: 3}
+    - target: {fileID: 6882288658357496779, guid: 13e09418fb2ed364394b58cb4e3c328d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1867,15 +1878,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8431331383346010076, guid: 13e09418fb2ed364394b58cb4e3c328d,
+    - target: {fileID: 9024104185988299374, guid: 13e09418fb2ed364394b58cb4e3c328d,
         type: 3}
-      propertyPath: m_Name
-      value: MenuUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 8431331383458345320, guid: 13e09418fb2ed364394b58cb4e3c328d,
-        type: 3}
-      propertyPath: inventorySize
-      value: 7
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e09418fb2ed364394b58cb4e3c328d, type: 3}
