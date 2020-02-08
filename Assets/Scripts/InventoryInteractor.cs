@@ -50,7 +50,15 @@ public class InventoryInteractor : MonoBehaviour, IDragHandler, IEndDragHandler
         foreach (var item in AllInventoeyItems)
         {
             bool interset = itemInteraction(GetComponent<RectTransform>(), item);
-            if (interset) print("bam");
+            if (interset)
+            {
+                int combination = 0;
+                if (name == "SultanHat" && item.name == "Lamp") combination = 1;
+                if (name == "Hammer" && item.name == "Instructions") combination = 2;
+                if (name == "AstronautHelmet" && item.name == "IdCard") combination = 3;
+
+
+            }
         }
         originPosSet = false;
         transform.position = originalPosition;
