@@ -1363,6 +1363,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 800649041601569905, guid: 13e09418fb2ed364394b58cb4e3c328d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6882288658357496779, guid: 13e09418fb2ed364394b58cb4e3c328d,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1496,6 +1501,11 @@ PrefabInstance:
     - target: {fileID: 6882288658596351262, guid: 13e09418fb2ed364394b58cb4e3c328d,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024104185988299374, guid: 13e09418fb2ed364394b58cb4e3c328d,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
