@@ -1368,6 +1368,12 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6280499408447160023, guid: 13e09418fb2ed364394b58cb4e3c328d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: acc194adcff05b645a2c3674728fd807,
+        type: 3}
     - target: {fileID: 6882288658357496779, guid: 13e09418fb2ed364394b58cb4e3c328d,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1506,7 +1512,7 @@ PrefabInstance:
     - target: {fileID: 9024104185988299374, guid: 13e09418fb2ed364394b58cb4e3c328d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e09418fb2ed364394b58cb4e3c328d, type: 3}
