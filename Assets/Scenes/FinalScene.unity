@@ -2209,7 +2209,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 84
-        y: 107
+        y: 139
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2295,19 +2295,19 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 329
-        y: 111
-        width: 108.28571
+        x: 288.5625
+        y: 100.42969
+        width: 100.28571
         height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: NextDialogue
-          isSystemEvent: 0
+          name: FINISHED
+          isSystemEvent: 1
           isGlobal: 0
-        toState: 
+        toState: Zustand 1
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2492,14 +2492,22 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 51
-        y: 329
+        x: 52
+        y: 386.0703
         width: 112.85714
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Zustand 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -2572,13 +2580,21 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 259
-        y: 383.09375
+        y: 415.09375
         width: 120.28571
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Zustand 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -2651,13 +2667,21 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 420
-        y: 327
+        y: 359
         width: 152.85715
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Zustand 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -2730,7 +2754,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 274
-        y: 175
+        y: 207
         width: 100
         height: 64
       isBreakpoint: 0

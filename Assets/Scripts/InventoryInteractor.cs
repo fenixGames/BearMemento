@@ -29,12 +29,6 @@ public class InventoryInteractor : MonoBehaviour, IDragHandler, IEndDragHandler
         //}
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -54,12 +48,17 @@ public class InventoryInteractor : MonoBehaviour, IDragHandler, IEndDragHandler
             bool interset = itemInteraction(GetComponent<RectTransform>(), item);
             if (interset)
             {
+                print("running");
                 int combination = 0;
-                if (name == "SultanHat" && item.name == "Lamp") combination = 1;
-                if (name == "Hammer" && item.name == "Instructions") combination = 2;
-                if (name == "AstronautHelmet" && item.name == "IdCard") combination = 3;
+                if (name.Contains("SultanHat") && item.name.Contains("Lamp")) combination = 1;
+                if (name.Contains("Hammer") && item.name.Contains("Instructions")) combination = 2;
+                if (name.Contains("AstronautHelmet") && item.name.Contains("IdCard")) combination = 3;
+                if (item.name.Contains("SultanHat") && name.Contains("Lamp")) combination = 1;
+                if (item.name.Contains("Hammer") && name.Contains("Instructions")) combination = 2;
+                if (item.name.Contains("AstronautHelmet") && name.Contains("IdCard")) combination = 3;
                 MainFSM.Fsm.Event(combination.ToString());
-
+                print(name + " " + item.name);
+                print(combination);
             }
         }
         originPosSet = false;
