@@ -1940,6 +1940,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuUI
       objectReference: {fileID: 0}
+    - target: {fileID: 8431331383458345320, guid: 13e09418fb2ed364394b58cb4e3c328d,
+        type: 3}
+      propertyPath: inventorySize
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e09418fb2ed364394b58cb4e3c328d, type: 3}
 --- !u!1001 &1991513459
