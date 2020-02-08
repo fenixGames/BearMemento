@@ -264,7 +264,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 6882288659587223858}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 6882288659587223859}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -305,6 +305,7 @@ MonoBehaviour:
   - DialogueName: Death
     Text: Bring it back to me
   DialogueText: {fileID: 1333558009}
+  MainFSM: {fileID: 0}
 --- !u!4 &1386391436
 Transform:
   m_ObjectHideFlags: 0
@@ -743,6 +744,11 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 275253563}
+    - target: {fileID: 3706060641773551816, guid: 0f217b38ba1f49f4bb89397aa43e3a75,
+        type: 3}
+      propertyPath: dialogUI
+      value: 
+      objectReference: {fileID: 6882288659587223859}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f217b38ba1f49f4bb89397aa43e3a75, type: 3}
 --- !u!1001 &6882288659587223858
@@ -864,3 +870,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e09418fb2ed364394b58cb4e3c328d, type: 3}
+--- !u!1 &6882288659587223859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6882288658357496778, guid: 13e09418fb2ed364394b58cb4e3c328d,
+    type: 3}
+  m_PrefabInstance: {fileID: 6882288659587223858}
+  m_PrefabAsset: {fileID: 0}
