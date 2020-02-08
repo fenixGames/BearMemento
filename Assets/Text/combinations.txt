@@ -1,3 +1,3 @@
-Dictionary + Lamp + Tissue + Hat = Genie magic scene
-Photo (always) + NASA card + space suit + remote = Canon scene
-Hammer + Instructions + wood (box) + nails (box) = wood scene
+Lamp + Hat = Genie magic scene
+Photo (always) + NASA card + space suit = Canon scene
+Hammer + Instructions + wood (box) = wood scene
