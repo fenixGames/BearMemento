@@ -11,6 +11,7 @@ public class DialogueSystem : MonoBehaviour
 
     public List<Dialogue> AllDialogues;
     public TextMeshProUGUI DialogueText;
+    public TextMeshProUGUI PopUpText;
 
     public PlayMakerFSM MainFSM;
 
@@ -26,15 +27,18 @@ public class DialogueSystem : MonoBehaviour
         {
             Instance = this;
         }
-
-   
-
     }
 
     public void AssignDialogue(string dialogueName)
     {
         Dialogue selected = AllDialogues.FirstOrDefault(content => content.DialogueName == dialogueName);
         DialogueText.text = selected.Text;
+    }
+
+    public void AssignPopUpDialogue(string dialogueName)
+    {
+        Dialogue selected = AllDialogues.FirstOrDefault(content => content.DialogueName == dialogueName);
+        PopUpText.text = selected.Text;
     }
 
     public void SetDialogue(string dialogue)
