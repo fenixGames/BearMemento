@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3706060641773551671}
   - component: {fileID: 3706060641773551670}
   - component: {fileID: 3706060641773551816}
-  - component: {fileID: 3738791199588511425}
+  - component: {fileID: 3491731916963758725}
   m_Layer: 0
   m_Name: Object
   m_TagString: Untagged
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: 
---- !u!65 &3738791199588511425
+--- !u!65 &3491731916963758725
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,5 +107,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Size: {x: 4.75, y: 4.84, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
